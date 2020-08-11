@@ -16,7 +16,7 @@ html, body {
 body {
     font-family: "Nunito", sans-serif;
     text-align: center;
-    background: rgba(235, 235, 235, 0.9);
+    background: #ffa8B6;
 }
 
 header {
@@ -83,11 +83,11 @@ header h1 {
     flex-wrap: nowrap;
     justify-content: flex-start;
     cursor: pointer;
-    width: 100%;
+    min-width: 360px;
     max-width: 360px;
     margin: 10px 10px 20px;
     padding: 10px;
-    background: rgba(245, 245, 245, 0.9);
+    background: #fbe3e8;
     border-radius: 0.25em;
     border: 1px solid rgba(50, 50, 50, 0.3);
     transition: .4s ease-out;
@@ -98,14 +98,21 @@ header h1 {
     width: 95px;
     margin: 10px 15px auto 10px;
     border-radius: 50%;
+    pointer-events: none
+}
+
+.card-img-container {
+    pointer-events: none
 }
 
 .card-info-container {
     text-align: left;
+    pointer-events: none;
 }
 
 .card-name {
     margin: 20px auto 0;
+    pointer-events: none
 }
 
 .card-text {
@@ -113,6 +120,7 @@ header h1 {
     color: rgba(50, 50, 50, 0.7);
     margin: 7px auto;
     transition: .4s ease-out;
+    pointer-events: none
 }
 
 .cap {
@@ -140,7 +148,7 @@ header h1 {
     min-height: 415px;
     margin: 10px auto auto;
     padding-bottom: 15px;
-    background: rgba(255, 255, 255, 1);
+    background: #fbe3e8 ;
     border-radius: 0.25em;
     border: 1px solid rgba(100, 100, 100, 0.3);
     transition: .4s ease-out;
@@ -151,11 +159,10 @@ header h1 {
     top: 15px;
     right: 15px;
     cursor: pointer;
-    color: rgba(255, 255, 255, 0.9);
-    background: rgba(0, 0, 0, 0.8);
+    color: black;
     outline: none;
     border-radius: 0.25em;
-    border: 1px solid rgba(50, 50, 50, 0.3);
+    border: none;
 }
 
 .modal-img {
@@ -248,8 +255,9 @@ header h1 {
 @media (min-width: 1024px) {
 
     .card:hover {
-        background: rgba(255, 255, 255, 1);
-        border: 1px solid rgba(50, 50, 50, 0.9);
+        background: #fbe3e8;
+        border: 1px solid yellow;
+        box-shadow: 5px 5px 8px yellow;
     }
 
     .card:hover .card-text {
