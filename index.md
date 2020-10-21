@@ -9,7 +9,7 @@
     <body>
 
         <!-- =======================
-            Gallery container 
+            Gallery container here
         ======================== -->
         <header>
             <div class="header-inner-container">
