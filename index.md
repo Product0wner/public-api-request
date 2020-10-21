@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en-US">
     <head>
         <title>Public API Requests</title>
